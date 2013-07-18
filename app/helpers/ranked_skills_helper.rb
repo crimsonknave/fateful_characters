@@ -1,0 +1,2 @@
+module RankedSkillsHelper
+end

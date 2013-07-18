@@ -1,0 +1,2 @@
+class RankedSkillsController < ApplicationController
+end

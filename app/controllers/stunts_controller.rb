@@ -1,0 +1,2 @@
+class StuntsController < ApplicationController
+end
