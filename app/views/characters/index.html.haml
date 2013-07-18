@@ -1,0 +1,6 @@
+%html
+  %body
+    %div.container
+      - @characters.each do |char|
+        %div[char]
+          = link_to char.name, char

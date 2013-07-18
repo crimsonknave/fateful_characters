@@ -1,3 +1,61 @@
 // Place all the styles related to the characters controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.refresh {
+  float: left;
+  border: solid 1px black;
+  height: 50px;
+}
+
+.name {
+  border: solid 1px black;
+  width: 400px;
+}
+
+.description {
+  border: solid 1px black;
+  width: 400px;
+}
+
+.info_left {
+  float: left;
+}
+
+.skills {
+  border: solid 1px black;
+  float: left;
+  width: 600px;
+  span.rank {
+    border: solid 1px blue;
+  }
+  span.name {
+    border: solid 1px green;
+  }
+}
+
+.row {
+  clear:both;
+  padding: 5px;
+  border: solid 2px red;
+  height: auto;
+}
+
+.aspects {
+  border: solid 1px black;
+  float: left;
+  width: 400px;
+}
+
+.extras {
+  border: solid 1px black;
+  float: left;
+  width: 500px;
+}
+
+.stunts {
+  border: solid 1px black;
+  float: left;
+  width: 500px;
+}
+

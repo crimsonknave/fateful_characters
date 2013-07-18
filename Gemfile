@@ -46,6 +46,8 @@ end
 # Use debugger
 gem 'debugger', group: [:development, :test]
 
+gem 'haml'
+
 group :test do
   gem 'rspec-rails'
   gem 'shoulda'

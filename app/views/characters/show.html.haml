@@ -1,0 +1,52 @@
+%html
+  %body
+    %div.container
+      %div.row.row_one
+        %div.info_left
+          %div.name
+            %span
+              Name:
+            %span
+              = @character.name
+          %div.description
+            %span
+              Description:
+            %span
+              = @character.description
+        %div.refresh
+          %span
+            Refresh:
+          %span
+            = @character.refresh
+      %div.row_two.row
+        %div.aspects
+          %div.header
+            Aspects
+          %div.contents
+            %ul
+              - @character.aspects.each do |aspect|
+                %li = aspect.name
+        %div.skills
+          %div.header
+            Skills
+          %div.contents
+            - @character.sorted_skills.keys.reverse.each do |rank|
+              %span.rank
+                #{ "#{rank} :" }
+                - @character.sorted_skills[rank].each do |name|
+                  %span.name= name
+              %br/
+      %div.row_three.row
+        %div.extras
+          %div.header
+            Extras
+          %div.contents
+            = @character.extras
+        %div.stunts
+          %div.header
+            Stunts
+          %div.contents
+            %ul
+              - @character.stunts.each do |stunt|
+                %li = stunt.name
+
